@@ -1,0 +1,25 @@
+services:
+  notes_postgres:
+    image: postgres:alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports: ["5432:5432"]
+    restart: always
+  notes_adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  notes-cap:
+    build:
+      context: .
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@db:5432/postgres
+      PORT: 4004
+      NODE_ENV: production
+    ports:
+      - 4004:4004
+    depends_on:
+      - notes_postgres
