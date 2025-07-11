@@ -1,0 +1,11 @@
+id,title,content,createdAt,createdBy,modifiedAt,modifiedBy
+1,Meeting Notes,"Discuss project milestones and deadlines.",2023-01-12T08:45:00Z,chrisobar,2023-01-12T09:00:00Z,chrisobar
+2,Shopping List,"Milk, eggs, bread, and coffee.",2023-02-05T12:10:00Z,chrisobar,2023-02-05T12:15:00Z,chrisobar
+3,Workout Plan,"30 mins cardio, 20 mins strength training.",2023-03-18T07:30:00Z,chrisobar,2023-03-18T08:00:00Z,chrisobar
+4,To-Do List,"Finish report, email client, schedule team meeting.",2023-04-10T09:00:00Z,chrisobar,2023-04-10T10:00:00Z,chrisobar
+5,Vacation Ideas,"Explore options for a weekend getaway.",2023-05-22T14:20:00Z,chrisobar,2023-05-23T15:00:00Z,chrisobar
+6,Recipe Notes,"Try adding more spices for flavor.",2023-06-02T11:30:00Z,chrisobar,2023-06-02T11:45:00Z,chrisobar
+7,Book List,"Check out recommended reading on productivity.",2023-07-14T17:00:00Z,chrisobar,2023-07-15T09:20:00Z,chrisobar
+8,Event Reminders,"Send RSVP for wedding, confirm attendance at conference.",2023-08-09T13:00:00Z,chrisobar,2023-08-09T14:30:00Z,chrisobar
+9,Daily Journal,"Reflections on today's progress and challenges.",2023-09-01T21:15:00Z,chrisobar,2023-09-02T08:00:00Z,chrisobar
+10,Gift Ideas,"Consider options for upcoming birthdays.",2023-10-20T10:40:00Z,chrisobar,2023-10-21T11:00:00Z,chrisobar

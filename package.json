@@ -8,13 +8,53 @@
   "dependencies": {
     "@cap-js/postgres": "^1.10.3",
     "@sap/cds": "^8",
-    "express": "^4"
-  },
-  "devDependencies": {
+    "@sap/xssec": "^4.2.4",
+    "@sap/cds-dk": "^8.0.0",
+    "@types/node": "^22.9.0",
+    "cors": "^2.8.5",
+    "express": "^4",
+    "express-session": "^1.18.1",
+    "passport": "^0.7.0",
+    "passport-google-oauth2": "^0.2.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
     "@cap-js/cds-types": "^0.6",
-    "@cap-js/sqlite": "^1"
+    "@types/cors": "^2.8.17",
+    "@types/express-session": "^1.18.0",
+    "@types/passport": "^1.0.17",
+    "@types/passport-google-oauth2": "^0.1.10",
+    "@types/pg": "^8.11.10"
+  },
+  "devDependencies": {},
+  "cds": {
+    "requires": {
+      "auth": {
+        "impl": "srv/custom-auth.js"
+      },
+      "db": {
+        "kind": "postgres",
+        "credentials": {
+          "host": "localhost",
+          "port": "5432",
+          "username": "postgres",
+          "password": "postgres",
+          "database": "postgres"
+        },
+        "[production]": {
+          "kind": "postgres",
+          "credentials": {
+            "host": "notes_postgres",
+            "port": "5432",
+            "username": "postgres",
+            "password": "postgres",
+            "database": "postgres"
+          }
+        }
+      }
+    }
   },
   "scripts": {
+    "build": "tsc",
     "start": "cds-serve"
   }
 }

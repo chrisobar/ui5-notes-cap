@@ -12,11 +12,18 @@ services:
     restart: always
     ports:
       - 8080:8080
-  notes-cap:
+  notes_app:
     build:
       context: .
+    container_name: Notes
+    develop:
+      watch:
+        - action: rebuild
+          path: package.json
+    env_file:
+      - .env
     environment:
-      DATABASE_URL: postgres://postgres:postgres@db:5432/postgres
+      DATABASE_URL: postgres://postgres:postgres@notes_postgres:5432/postgres
       PORT: 4004
       NODE_ENV: production
     ports:
